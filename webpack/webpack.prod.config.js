@@ -1,4 +1,3 @@
-import DefinePlugin  from 'webpack';
 import {merge}  from 'webpack-merge';
 import TerserPlugin from 'terser-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
