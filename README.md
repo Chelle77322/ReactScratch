@@ -3,12 +3,14 @@
 
 A foundation app that uses React and webpack to compile. This app can be built upon.
 
-React Scratch
+<h1 align = "center>React Scratch<h1>
 
-    <img src="https://img.shields.io/github/repo-size/Chelle77322/ReactScratch" />
+    <p align="center"><img src="https://img.shields.io/github/repo-size/Chelle77322/ReactScratch" />
 
 
-  
+  </p>
+  <br>
+  <p align="center>
 
     <img src="https://img.shields.io/badge/Javascript-yellow" />
     <img src="https://img.shields.io/badge/jQuery-blue"  />
@@ -18,7 +20,7 @@ React Scratch
       <img src="https://img.shields.io/badge/-express-yellow" >
     <img src="https://img.shields.io/badge/-screencastify-lightgrey" />
     <img src="https://img.shields.io/badge/-json-orange" />
-
+</p>
 ![badge](https://img.shields.io/badge/license-GNU-brightgreen)
 
 ## Description
