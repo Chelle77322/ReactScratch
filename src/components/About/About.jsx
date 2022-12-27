@@ -2,6 +2,7 @@
 import React, {Component} from "react";
 import {Container, Row, Col} from "react-bootstrap";
 
+
 import "../../styles/style.scss"
 //import PropTypes from "prop-types";
 

@@ -45,7 +45,13 @@ let webpackBaseConfig = () => {
                 
               ]
             
-          }
+          },
+          {
+            test: /\.(jpg|png)$/,
+            use: {
+              loader: 'url-loader',
+            },
+          },
         
         ],
       },

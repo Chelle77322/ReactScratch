@@ -2,16 +2,18 @@ import React, {Component} from "react";
 import "../../styles/style.scss";
 import {Link} from "react-scroll";
 
+
 export default class NavBar extends Component{
 	render(){
 		return(
 			<nav className = "mask-row">
+				
 			{/*<button type = "button" data-toggle= "collapse" data-target = "#navbarNavMenu" aria-controls="navbarNavMenu"
 			aria-expanded="false"
 			aria-label="Toggle navigation">
 		<i className = "fas fa-bars fa-lg"></i>*/}
 			
-			<div className = "mask-row" id = "navbarNavMenu">
+			<div className = "mask-row" id = "navbarNavMenu" >
 		
 				<button className = "mask-button">
 					<Link to = "about"
