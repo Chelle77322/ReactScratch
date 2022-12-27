@@ -28,14 +28,25 @@ let webpackBaseConfig = () => {
               loader: 'babel-loader',
             }
           },
-          { 
-            test: /\.scss$/,
+          {
+          test: /\.jsx$/,
             exclude: /node_modules/,
-            use: [
-              process.env.NODE_ENV === 'production'? MiniCssExtractPlugin.loader: 'style-loader',
-              'css-loader'
-            ]
+            use: {
+              loader: 'babel-loader',
+            }
           },
+          {
+            
+              test: /\.(sa|sc|c)ss$/,
+              use: [
+    
+                'css-loader',
+                'sass-loader',
+                
+              ]
+            
+          }
+        
         ],
       },
       plugins: [

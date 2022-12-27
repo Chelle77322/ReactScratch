@@ -7,8 +7,8 @@ import "../../styles/style.scss"
 export default class Home extends Component{
   render(){
   return (
-    <section>
-      <Container fluid className = "Recontainer" id="home">
+   // <section>
+      <Container fluid className = "container" id="home">
         
         <Container className="home-content">
           <Row>
@@ -26,7 +26,7 @@ export default class Home extends Component{
         </Container>
       </Container>
      
-    </section>
+ 
   );
 }
 }
