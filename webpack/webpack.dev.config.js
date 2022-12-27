@@ -11,6 +11,11 @@ let developmentConfig = () => {
     {
      mode: 'development',
      entry:'./src/index.js',
+     output:{
+      path: path.resolve(__dirname, "dist",),
+      publicPath: "/",
+      main: "/dist/main.js",
+     },
      performance: {
       hints: process.env.NODE_ENV === 'development' ? "warning" : false
     },

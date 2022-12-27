@@ -7,14 +7,14 @@ import "../../styles/style.scss"
 export default class Home extends Component{
   render(){
   return (
-   // <section>
-      <Container fluid className = "container" id="home">
+   <section>
+      <Container fluid className = "mask-container" id="home">
         
         <Container className="home-content">
           <Row>
             <Col>
             <div className ="home-header typewriter h1">
-            <h1 style={{ paddingBottom: 5 }} className="heading">
+            <h1 style={{ paddingBottom: 5 }} className="heading">The Start
               </h1>
               
               </div>
@@ -25,7 +25,7 @@ export default class Home extends Component{
           </Row>
         </Container>
       </Container>
-     
+   </section>  
  
   );
 }

@@ -15,6 +15,11 @@ let productionConfig = () => {
     {
       mode: 'production',
       entry: "./src/index.js",
+      output:{
+        path: path.resolve(__dirname, "dist",),
+        publicPath: "/",
+        main: "/dist/main.js",
+       },
       performance: {
         hints: process.env.NODE_ENV === 'production' ? "warning" : false
       },
