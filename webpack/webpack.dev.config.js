@@ -1,4 +1,4 @@
-import {merge}  from 'webpack-merge';
+import { merge }  from 'webpack-merge';
 import  webpackBaseConfig  from './webpack.base.config.js';
 import path from 'path';
 import { fileURLToPath } from 'url';

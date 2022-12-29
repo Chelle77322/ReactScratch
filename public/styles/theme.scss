@@ -1,0 +1,56 @@
+$mask-color-primary: #90f2f3 !default;
+$mask-color-secondary: #916c85 !default;
+$mask-color-background: #8fb6ed !default;
+$mask-font-color: #073c36 !default;
+
+$mask-brand-colors: (
+  "primary": $mask-color-primary,
+  "secondary": $mask-color-secondary,
+  "text": $mask-font-color
+) !default;
+
+$mask-color-body: scale-color($mask-color-primary, $lightness: -40%, $saturation: -50%) !default;
+$mask-color-gray: mix(#ddd8d8, $mask-color-body, 70%) !default;
+
+$mask-colors: map-merge(
+  $mask-brand-colors,
+  (
+    "text": $mask-font-color,
+    "background": $mask-color-background,
+    "light": #fff,
+    "dark": rgba(black, 0.87),
+    "gray": $mask-color-gray,
+  )
+);
+
+@function mask-color($key) {
+  @return map-get($mask-colors, $key);
+}
+
+// Add/remove to selectively generate `ink` (text color) classes
+$mask-ink-colors: "text", "secondary", "gray", "light", "dark" !default;
+
+// Add/remove to selectively generate `background` (text color) classes
+$mask-background-colors: "primary", "secondary", "background", "gray", "light" !default;
+
+$mask-button-variants: "primary", "secondary", "light", "gray" !default;
+$mask-link-color: mask-color("text") !default;
+$mask-border-radius: 12px !default;
+
+$mask-font-family: "Barlow", sans-serif;
+$mask-strong-font-weight: 500 !default;
+$mask-h1-font-size: 4.2rem !default;
+$mask-h2-font-size: 3.15rem !default;
+$mask-h3-font-size: 2rem !default;
+$mask-h4-font-size: 1.35rem !default;
+$mask-text-font-size: 1.15rem !default;
+$mask-lead-font-size: 1.35rem !default;
+$mask-font-color:"text";
+
+$mask-spacing: (
+  sm: 0.8rem,
+  md: 2.5rem,
+  lg: 4rem,
+  xl: 6.5rem,
+  auto: "auto",
+) !default;

@@ -1,9 +1,10 @@
-import {merge}  from 'webpack-merge';
+import { merge }  from 'webpack-merge';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
-import path from 'path';
+import path from "path";
 import { fileURLToPath } from 'url';
+import  webpack  from 'webpack';
  const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 console.log('directory-name', __dirname);
@@ -36,16 +37,30 @@ let webpackBaseConfig = () => {
             }
           },
           {
-            
-              test: /\.(sa|sc|c)ss$/,
-              use: [
-    
-                'css-loader',
-                'sass-loader',
-                
-              ]
-            
+            test: /\.module\.(sa|sc|c)ss$/,
+            use: [
+              {
+              loader:'style-loader',
+              options:{ insert: "body"}
+              },
+              {
+                loader: 'css-loader',
+                options: { modules: true }
+              },
+              'sass-loader'
+            ]
           },
+          {
+            
+            test: /\.(sa|sc|c)ss$/,
+            use: [
+  
+              'css-loader',
+              'sass-loader',
+              
+            ]
+          
+        },
           {
             test: /\.(jpg|png)$/,
             use: {
@@ -59,8 +74,22 @@ let webpackBaseConfig = () => {
         new HtmlWebpackPlugin({
           template: './public/index.html',
           filename: './index.html'
-        })
+        }),
+        new MiniCssExtractPlugin({
+          filename: "index.css",
+          chunkFilename: "index.css"
+          
+        }),
+        new webpack.DefinePlugin({
+        'process.env': {
+          WEBPACK: JSON.stringify(true),
+      }
+    }),
       ],
+      devServer: {
+        historyApiFallback: true,
+        
+      }
   }]);
     };
    export default webpackBaseConfig();

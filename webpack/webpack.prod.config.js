@@ -1,4 +1,4 @@
-import {merge}  from 'webpack-merge';
+import { merge }  from 'webpack-merge';
 import TerserPlugin from 'terser-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import OptimizeCssAssetsPlugin from 'optimize-css-assets-webpack-plugin';
