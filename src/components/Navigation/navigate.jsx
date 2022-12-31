@@ -6,39 +6,39 @@ import {Link} from "react-scroll";
 export default class NavBar extends Component{
 	render(){
 		return(
-			<nav className = ".mask-hero">
+			<nav className = "mask-hero">
 				
 			{/*<button type = "button" data-toggle= "collapse" data-target = "#navbarNavMenu" aria-controls="navbarNavMenu"
 			aria-expanded="false"
 			aria-label="Toggle navigation">
 		<i className = "fas fa-bars fa-lg"></i>*/}
 			
-			<div className = "mask-row" id = "navbarNavMenu" >
+			<div className = "mask-hero" id = "navbarNavMenu" >
 		
-				<button className = "mask-button">
+				<button className = "button">
 					<Link to = "about"
-					className = "nav-link"
+					className = "h2"
 					activeClass="active"
 					spy={true}
 					smooth={true}>About</Link>
 				</button>
-				<button className = ".mask-button">
+				<button className = "button">
 					<Link to = "my-samples"
-					className = "nav-link"
+					className = "h2"
 					activeClass="active"
 					spy={true}
 					smooth={true}>Samples</Link>
 				</button>
-				<button className = ".mask-button">
-					<Link to = "resume"
-					className = "nav-link"
+				<button className = "button">
+					<Link to = "information"
+					className = "h2"
 					activeClass="active"
 					spy={true}
-					smooth={true}>Resume</Link>
+					smooth={true}>Information</Link>
 				</button>
-				<button className = ".mask-button">
+				<button className = "mask-button">
 					<Link to = "my-contact"
-					className = "nav-link"
+					className = "h2"
 					activeClass="active"
 					spy={true}
 					smooth={true}>Contact</Link>

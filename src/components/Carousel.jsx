@@ -2,7 +2,7 @@ import React from 'react';
 import samplesData from"../data/mockData.js"
 import Main from "./Carousel/Main.jsx";
 import "../styles/style.scss";
-//import "../styles/_carousel.scss";
+import "../styles/carousel.scss";
 
 export default function MySamples (props){
    
@@ -15,7 +15,9 @@ export default function MySamples (props){
         "showCaption": true,
         "showSlideNum" : true,
         "showDots": true,
-        "showArrows": 'both'
+        "showArrows": 'both',
+       
+       
     };
    
     return <Main config={myConfig}/>

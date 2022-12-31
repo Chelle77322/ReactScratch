@@ -17,7 +17,7 @@ $mask-colors: map-merge(
   (
     "text": $mask-font-color,
     "background": $mask-color-background,
-    "light": #fff,
+    "light": rgb(146, 229, 217),
     "dark": rgba(black, 0.87),
     "gray": $mask-color-gray,
   )
@@ -38,9 +38,9 @@ $mask-link-color: mask-color("text") !default;
 $mask-border-radius: 12px !default;
 
 $mask-font-family: "Barlow", sans-serif;
-$mask-strong-font-weight: 500 !default;
-$mask-h1-font-size: 4.2rem !default;
-$mask-h2-font-size: 3.15rem !default;
+$mask-strong-font-weight: 600 !default;
+$mask-h1-font-size: 4.1rem !default;
+$mask-h2-font-size: 3.05rem !default;
 $mask-h3-font-size: 2rem !default;
 $mask-h4-font-size: 1.35rem !default;
 $mask-text-font-size: 1.15rem !default;

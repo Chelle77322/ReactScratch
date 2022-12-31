@@ -9,7 +9,7 @@ import image_6 from "../assets/samples/image_6.jpg";
 
  const samplesData = [
        {
-           "src": image_1,
+        "scr": image_1,
          
         },
         {

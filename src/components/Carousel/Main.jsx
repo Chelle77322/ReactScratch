@@ -3,6 +3,7 @@ import CarouselDot from './CarouselDot.jsx';
 import CarouselNextBtn from "./CarouselNextBtn.jsx";
 import CarouselPrevBtn from "./CarouselPrevBtn.jsx";
 import "../../styles/style.scss";
+import "../../styles/carousel.scss"
 
 export default class Main extends Component {
     constructor(props){
@@ -59,9 +60,9 @@ export default class Main extends Component {
         const {data, infinite, showCaption, showSlideNum, showDots, showArrows} = this.props.config;
         return(<div>
         <div className="my-samples">
-            { showSlideNum && <div className='numbertext'>{this.state.currentSlideIndex+1} / {data.length}</div>}
+            { showSlideNum && <div className='h3'>{this.state.currentSlideIndex+1} / {data.length}</div>}
            
-        <img className='img-container' src = {data[this.state.currentSlideIndex].src} alt="Snow"/>
+        <img className='mask-img' src = {data[this.state.currentSlideIndex].src} alt="Snow"/>
         
        
         {

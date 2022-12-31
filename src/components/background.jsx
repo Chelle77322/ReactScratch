@@ -14,7 +14,7 @@ export default class Background extends Component
     render(){
         return (
             <div id = "body"
-            className=""></div>
+            className="mask-container"></div>
         );
     }
 }

@@ -8,19 +8,21 @@ export default class Home extends Component{
   render(){
   return (
    <section>
-      <Container fluid className = ".main.mask-container" id="home">
+      <Container fluid className = "mask-container" id="home">
         
-        <Container className="home-content">
+        <Container className="mask-section">
           <Row>
             <Col>
-            <div className ="home-header typewriter h1">
-            <h1 style={{ paddingBottom: 5 }} className="heading"> 
-Isomporphic Application 🍎 
+            <div className ="h1">
+            <h1 style={{ paddingBottom: 5 }} className="h1"> 
+Isomporphic Application Template
 
               </h1>
               
               </div>
               <div style={{ padding: 50, textAlign: "center" }}>
+              <p className = "p,li"></p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                
               </div>
             </Col>
