@@ -10,7 +10,7 @@ export default class About extends Component {
 	render() {
 		return (
 <section>
-      <Container fluid id="about"className = "hr six">
+      <Container fluid id="about"className = "hr">
         <Container className="mask-main-container">
           <Row>
             <Col md={7} className="mask-hero"> </Col>
@@ -19,7 +19,7 @@ export default class About extends Component {
 		
 			<div style={{ padding:10, textAlign: "justify" }} id = "about">
 			<br/>
-				<p className = "mask-lead">
+				<p className = "style.mask-lead">
 			This is where you can change 💁 
             anything you want
 			

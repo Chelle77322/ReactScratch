@@ -8,14 +8,14 @@ export default class Home extends Component{
   render(){
   return (
    <section>
-      <Container fluid className = {style.main.mask-container} id="home">
+      <Container fluid className = ".main.mask-container" id="home">
         
         <Container className="home-content">
           <Row>
             <Col>
             <div className ="home-header typewriter h1">
             <h1 style={{ paddingBottom: 5 }} className="heading"> 
-Adding some text 📲 
+Isomporphic Application 🍎 
 
               </h1>
               

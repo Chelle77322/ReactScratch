@@ -1,14 +1,12 @@
 import React from "react";
 import Home from "./components/Home/Home.jsx";
-import NavBar from "./components/Navigation/navigate.jsx"
-import "./styles/style.scss"
-
-
+import NavBar from "./components/Navigation/navigate.jsx";
 import Footer from "./components/footer.jsx"
 import About from "./components/About/About.jsx"
+import  "./styles/style.scss"
 function App () {
     return (
-        <div className = {style.App}>
+        <div className ="App">
          
            
             <NavBar />

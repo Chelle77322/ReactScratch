@@ -41,11 +41,11 @@ let webpackBaseConfig = () => {
             use: [
               {
               loader:'style-loader',
-              options:{ insert: "body"}
+            
               },
               {
                 loader: 'css-loader',
-                options: { modules: true }
+               
               },
               'sass-loader'
             ]
@@ -53,7 +53,7 @@ let webpackBaseConfig = () => {
           {
             
             test: /\.(sa|sc|c)ss$/,
-            use: [
+            use: [MiniCssExtractPlugin.loader,
   
               'css-loader',
               'sass-loader',
@@ -76,8 +76,7 @@ let webpackBaseConfig = () => {
           filename: './index.html'
         }),
         new MiniCssExtractPlugin({
-          filename: "index.css",
-          chunkFilename: "index.css"
+         
           
         }),
         new webpack.DefinePlugin({

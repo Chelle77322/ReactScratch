@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import PropTypes from "prop-types";
-import  "../styles/style.scss";
+import "../styles/style.scss"
+
 import {WOW} from "wowjs";
 
 export default class Background extends Component
@@ -13,7 +14,7 @@ export default class Background extends Component
     render(){
         return (
             <div id = "body"
-            className=".main.mask-container"></div>
+            className=""></div>
         );
     }
 }

@@ -15,7 +15,7 @@ export default class NavBar extends Component{
 			
 			<div className = "mask-row" id = "navbarNavMenu" >
 		
-				<button className = {style.mask-button}>
+				<button className = "mask-button">
 					<Link to = "about"
 					className = "nav-link"
 					activeClass="active"
