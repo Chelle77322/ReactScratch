@@ -23,11 +23,11 @@ export default class NavBar extends Component{
 					smooth={true}>About</Link>
 				</button>
 				<button className = ".mask-button">
-					<Link to = "my-projects"
+					<Link to = "my-samples"
 					className = "nav-link"
 					activeClass="active"
 					spy={true}
-					smooth={true}>Projects</Link>
+					smooth={true}>Samples</Link>
 				</button>
 				<button className = ".mask-button">
 					<Link to = "resume"
