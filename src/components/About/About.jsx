@@ -15,11 +15,11 @@ export default class About extends Component {
           <Row>
             <Col md={7} className="mask-section"> </Col>
 			<Col md={100} style={{ paddingBottom:100 }} className = "h1">
-            <div className ="h1"></div>
+            <div className ="h1">About</div>
 		
 			<div style={{ padding:10, textAlign: "center" }} id = "about">
 			<br/>
-				<p className = "p,li">
+				<p className = "p">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 			
 				

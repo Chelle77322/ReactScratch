@@ -1,7 +1,7 @@
-$mask-color-primary: #90f2f3 !default;
-$mask-color-secondary: #916c85 !default;
-$mask-color-background: #8fb6ed !default;
-$mask-font-color: #073c36 !default;
+$mask-color-primary: #aacfd5 !default;
+$mask-color-secondary: #b1b8ec !default;
+$mask-color-background: #e6eed8 !default;
+$mask-font-color: #060125 !default;
 
 $mask-brand-colors: (
   "primary": $mask-color-primary,
@@ -10,14 +10,14 @@ $mask-brand-colors: (
 ) !default;
 
 $mask-color-body: scale-color($mask-color-primary, $lightness: -40%, $saturation: -50%) !default;
-$mask-color-gray: mix(#ddd8d8, $mask-color-body, 70%) !default;
+$mask-color-gray: mix(#e6eed8, $mask-color-body, 70%) !default;
 
 $mask-colors: map-merge(
   $mask-brand-colors,
   (
     "text": $mask-font-color,
     "background": $mask-color-background,
-    "light": rgb(146, 229, 217),
+    "light": #fff,
     "dark": rgba(black, 0.87),
     "gray": $mask-color-gray,
   )
@@ -38,9 +38,9 @@ $mask-link-color: mask-color("text") !default;
 $mask-border-radius: 12px !default;
 
 $mask-font-family: "Barlow", sans-serif;
-$mask-strong-font-weight: 600 !default;
-$mask-h1-font-size: 4.1rem !default;
-$mask-h2-font-size: 3.05rem !default;
+$mask-strong-font-weight: 500 !default;
+$mask-h1-font-size: 4.2rem !default;
+$mask-h2-font-size: 3.15rem !default;
 $mask-h3-font-size: 2rem !default;
 $mask-h4-font-size: 1.35rem !default;
 $mask-text-font-size: 1.15rem !default;

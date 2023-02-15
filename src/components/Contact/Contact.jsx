@@ -10,12 +10,12 @@ export default class Contact extends Component{
   render(){
   return (
     <section>
-      <Container fluid className="container -fluid" id="contact">
+      <Container fluid className="hr" id="contact">
         
-        <Container className="hr six">
+        <Container className="mask-container">
           <Row>
 
-      <Col md={100} style={{ paddingBottom:50 }} className = "tdbc-main">
+      <Col md={100} style={{ paddingBottom:50 }} className = "mask-section">
             <div className ="contact-header" id = "my-contact">
             <h3 style={{ paddingBottom: 5 }} className="h3">
                Contact</h3>
@@ -26,7 +26,7 @@ export default class Contact extends Component{
               </div>
              
              
-  <Col md={100} style={{ paddingBottom:50 }} className ="tdbc-main">
+  <Col md={100} style={{ paddingBottom:50 }} className ="footer">
 
   
      

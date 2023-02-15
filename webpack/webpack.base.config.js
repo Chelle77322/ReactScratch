@@ -1,10 +1,12 @@
 import { merge }  from 'webpack-merge';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
-
+//import UglifyJsPlugin from "uglifyjs-webpack-plugin"
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
+import NodePolyfillPlugin from "node-polyfill-webpack-plugin"
 import path from "path";
 import { fileURLToPath } from 'url';
 import  webpack  from 'webpack';
+
  const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 console.log('directory-name', __dirname);
@@ -13,14 +15,18 @@ console.log('directory-name', __dirname);
 let webpackBaseConfig = () => {
   return merge([
     {
-      mode: 'production',
+      externals:{
+        "fs": "commonjs fs",
+        "net": "commonjs net",
+      },
+
+      mode: 'none',
       performance: {
         hints: false,
-        maxEntrypointSize: 512000,
-        maxAssetSize: 512000
+        maxEntrypointSize: 4100000,
+        maxAssetSize: 4100000
     },
       module: {
-    
         rules: [
           {
             test: /\.js$/,
@@ -64,7 +70,7 @@ let webpackBaseConfig = () => {
           {
             test: /\.(jpg|png)$/,
             use: {
-              loader: 'url-loader',
+             loader: 'url-loader',
             },
           },
         
@@ -73,20 +79,20 @@ let webpackBaseConfig = () => {
       plugins: [
         new HtmlWebpackPlugin({
           template: './public/index.html',
-          filename: './index.html'
+          filename: 'index.html'
         }),
-        new MiniCssExtractPlugin({
-         
-          
-        }),
-        new webpack.DefinePlugin({
-        'process.env': {
-          WEBPACK: JSON.stringify(true),
-      }
-    }),
+      
+      new webpack.DefinePlugin({
+    'process.platform': JSON.stringify(process.platform)
+  }),
+    new NodePolyfillPlugin(),
+    new MiniCssExtractPlugin({ })
       ],
       devServer: {
         historyApiFallback: true,
+        static:{
+          directory: path.join(__dirname, 'public'),
+        }
         
       }
   }]);

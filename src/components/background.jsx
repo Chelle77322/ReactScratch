@@ -13,7 +13,7 @@ export default class Background extends Component
     }
     render(){
         return (
-            <div id = "body"
+            <div id = "my-background"
             className="mask-container"></div>
         );
     }

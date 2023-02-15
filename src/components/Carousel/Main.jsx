@@ -62,7 +62,7 @@ export default class Main extends Component {
         <div className="my-samples">
             { showSlideNum && <div className='h3'>{this.state.currentSlideIndex+1} / {data.length}</div>}
            
-        <img className='mask-img' src = {data[this.state.currentSlideIndex].src} alt="Snow"/>
+        <img className='mask-img, img' src = {data[this.state.currentSlideIndex].src} alt="Snow"/>
         
        
         {

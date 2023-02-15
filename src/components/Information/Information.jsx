@@ -3,8 +3,8 @@ import React, {Component} from "react";
 import {Container, Row, Col} from "react-bootstrap";
 
 
-import "../../styles/style.scss"
-//import PropTypes from "prop-types";
+
+
 
 export default class Information extends Component {
 	render() {
@@ -15,7 +15,7 @@ export default class Information extends Component {
           <Row>
             <Col md={7} className="article"> </Col>
 			<Col md={100} style={{ paddingBottom:100 }} className = "h1">
-            <div className ="h1"></div>
+            <div className ="h1">Information</div>
 		
 			<div style={{ padding:30, textAlign: "center" }} id = "information">
 			<br/>

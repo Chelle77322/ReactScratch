@@ -10,12 +10,12 @@ export default class Home extends Component{
    <section>
       <Container fluid className = "mask-container" id="home">
         
-        <Container className="mask-section">
+        <Container>
           <Row>
             <Col>
-            <div className ="h1">
+            <div className ="mask-hero">
             <h1 style={{ paddingBottom: 5 }} className="h1"> 
-Isomporphic Application Template
+Basic Isomorphic React Template App
 
               </h1>
               
